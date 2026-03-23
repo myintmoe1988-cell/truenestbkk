@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Yangon Airport VIP Pass | True Nest BKK Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🏠</div>
+    <div class="logo-text"><strong>True Nest BKK</strong><span>Service · Bangkok</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About Us</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="tel:+66994147913" class="nav-cta">📞 ဆက်သွယ်ရန်</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <a href="airport-service.html" class="back-btn">← Airport Service သို့ ပြန်သွားရန်</a>
+    <div class="page-hero-label">Airport Service</div>
+    <h1>Yangon Airport VIP Pass</h1>
+    <p class="page-hero-my">ရန်ကုန်လေဆိပ် VIP Pass</p>
+  </div>
+</div>
+<div class="page-content">
+<div class="info-section reveal"><div class="info-title">ဝန်ဆောင်မှု ပါဝင်သောအချက်များ</div><ul class="docs-list"><li><div class="doc-icon">📄</div><div><strong>Yangon International Airport VIP Lounge</strong><div class="my">Premium Lounge ဝင်ခွင့်</div></div></li><li><div class="doc-icon">📄</div><div><strong>Fast Track Immigration (Arrival/Departure)</strong><div class="my">VIP Lane ဖြင့် မြန်ဆန်စွာ ဖြတ်သန်း</div></div></li><li><div class="doc-icon">📄</div><div><strong>Meet & Greet</strong><div class="my">Airport Staff ကြိုဆိုပေး</div></div></li><li><div class="doc-icon">📄</div><div><strong>Baggage Assistance</strong><div class="my">Luggage ကိုင်ဆောင်ပေးသည့် ဝန်ဆောင်မှု</div></div></li></ul></div><div class="info-section reveal"><div class="info-title">ဝန်ဆောင်မှု အဆင့်များ</div><div class="steps"><div class="step"><div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">ကြိုတင် Book ပါ</div><div class="step-desc my">ခရီးမတက်မီ ၃-၅ ရက်ကြိုတင် Book ပါ</div></div></div><div class="step"><div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">Flight Details ပေးပို့ပါ</div><div class="step-desc my">Flight No., Date, Arrival/Departure, Passport Name</div></div></div><div class="step"><div class="step-left"><div class="step-num">3</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">Confirmation ရပြီး ခရီးထွက်ပါ</div><div class="step-desc my">e-Voucher ထုတ်ပေးပါမည်</div></div></div><div class="step"><div class="step-left"><div class="step-num">4</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">Airport တွင် VIP Service ခံစားပါ</div><div class="step-desc my">Meet & Greet + Lounge + Fast Track ဝန်ဆောင်မှု</div></div></div></div></div>
+
+<div class="cta-contact">
+  <h3>ဆက်သွယ်ရန် / Contact Us</h3>
+  <span class="my">မေးမြန်းချင်သည်များ Viber / WhatsApp / Phone မှ ဆက်သွယ်နိုင်ပါသည်</span>
+  <div class="contact-btns">
+    <a href="viber://chat?number=66994147913" class="cbtn cbtn-line">📲 Viber</a>
+    <a href="https://wa.me/66994147913" class="cbtn cbtn-wa">💬 WhatsApp</a>
+    <a href="tel:+66994147913" class="cbtn cbtn-phone">📞 +66994147913</a>
+  </div>
+</div>
+</div>
+<footer><p>© 2024–2026 True Nest BKK Service · Bangkok, Thailand &nbsp;|&nbsp; <span class="my">မြန်မာနိုင်ငံသားများအတွက် ဝန်ဆောင်မှု</span></p></footer>
+<script>
+const nb=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nb.classList.toggle('scrolled',scrollY>20));
+document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((e)=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('visible')),{threshold:0.08}).observe(el));
+</script>
+</body>
+</html>

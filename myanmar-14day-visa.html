@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>မြန်မာနိုင်ငံသားများအတွက် ထိုင်း ၁၄ ရက် Visa Free | Yone Kyi Yar BKK Service</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;600;700&family=Noto+Serif+Myanmar:wght@400;700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #F0D080;
+    --dark: #0D1117;
+    --dark2: #161C25;
+    --dark3: #1E2733;
+    --text: #E8EAF0;
+    --text-muted: #9BA3B0;
+    --green: #2ECC71;
+    --red: #E74C3C;
+    --orange: #F39C12;
+    --blue: #3498DB;
+    --border: rgba(201,168,76,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'Noto Sans Myanmar', 'Sarabun', sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D1117 0%, #1a2340 50%, #0D1117 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 20px 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at 60% 40%, rgba(201,168,76,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 30% 70%, rgba(52,152,219,0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif Myanmar', serif;
+    font-size: clamp(24px, 5vw, 42px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .hero h1 span {
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    color: var(--text-muted);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 0 auto 32px;
+  }
+
+  .hero-flags {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  /* QUICK FACTS */
+  .quick-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .fact-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 12px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+  .fact-card:hover {
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.08);
+    transform: translateY(-2px);
+  }
+
+  .fact-icon { font-size: 24px; margin-bottom: 6px; }
+  .fact-value { font-size: 22px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 4px; }
+  .fact-label { font-size: 11px; color: var(--text-muted); }
+
+  /* CONTAINER */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 48px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .section-title {
+    font-family: 'Noto Serif Myanmar', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ALERT BOX */
+  .alert {
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 0 auto 24px;
+    max-width: 800px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .alert-warning {
+    background: rgba(243,156,18,0.1);
+    border: 1px solid rgba(243,156,18,0.4);
+  }
+
+  .alert-info {
+    background: rgba(52,152,219,0.1);
+    border: 1px solid rgba(52,152,219,0.3);
+  }
+
+  .alert-success {
+    background: rgba(46,204,113,0.08);
+    border: 1px solid rgba(46,204,113,0.3);
+  }
+
+  .alert-danger {
+    background: rgba(231,76,60,0.1);
+    border: 1px solid rgba(231,76,60,0.3);
+  }
+
+  .alert-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .alert-body { flex: 1; }
+  .alert-title { font-weight: 700; margin-bottom: 4px; font-size: 14px; }
+  .alert-warning .alert-title { color: var(--orange); }
+  .alert-info .alert-title { color: var(--blue); }
+  .alert-success .alert-title { color: var(--green); }
+  .alert-danger .alert-title { color: var(--red); }
+  .alert p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+  /* CONTENT CARD */
+  .content-card {
+    background: var(--dark2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 28px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    transition: border-color 0.3s;
+  }
+
+  .content-card:hover {
+    border-color: var(--border);
+  }
+
+  .content-card p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 14px;
+  }
+
+  .content-card p:last-child { margin-bottom: 0; }
+
+  /* CHECKLIST */
+  .checklist {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .checklist li:last-child { border-bottom: none; }
+
+  .check-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .check-green { background: rgba(46,204,113,0.15); color: var(--green); }
+  .check-red { background: rgba(231,76,60,0.15); color: var(--red); }
+  .check-orange { background: rgba(243,156,18,0.15); color: var(--orange); }
+
+  .checklist strong { color: var(--text); }
+
+  /* STEPS */
+  .steps {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .step {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+
+  .step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), #a07830);
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-line {
+    width: 2px;
+    flex: 1;
+    background: var(--border);
+    margin: 6px 0;
+    min-height: 24px;
+  }
+
+  .step:last-child .step-line { display: none; }
+
+  .step-content {
+    flex: 1;
+    padding-bottom: 28px;
+  }
+
+  .step-title {
+    font-weight: 700;
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .step-desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* COMPARE TABLE */
+  .compare-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .compare-table th {
+    background: var(--dark3);
+    color: var(--gold);
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 2px solid var(--border);
+    font-weight: 600;
+  }
+
+  .compare-table td {
+    padding: 13px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-muted);
+    vertical-align: top;
+  }
+
+  .compare-table tr:hover td {
+    background: rgba(255,255,255,0.02);
+  }
+
+  .compare-table .td-label {
+    color: var(--text);
+    font-weight: 600;
+    width: 180px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .badge-green { background: rgba(46,204,113,0.15); color: var(--green); }
+  .badge-red { background: rgba(231,76,60,0.15); color: var(--red); }
+  .badge-orange { background: rgba(243,156,18,0.15); color: var(--orange); }
+
+  /* CTA */
+  .cta-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--dark2), var(--dark3));
+    border-top: 1px solid var(--border);
+  }
+
+  .cta-title {
+    font-family: 'Noto Serif Myanmar', serif;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  .cta-sub {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gold), #a07830);
+    color: var(--dark);
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 20px rgba(201,168,76,0.3);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(201,168,76,0.4);
+  }
+
+  /* FOOTER NOTE */
+  .footer-note {
+    background: var(--dark);
+    padding: 24px 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+
+  /* TWO COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .two-col { grid-template-columns: 1fr; }
+    .compare-table { font-size: 13px; }
+    .compare-table .td-label { width: 130px; }
+  }
+
+  .mini-card {
+    background: var(--dark2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .mini-card-title {
+    font-weight: 700;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mini-card p {
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero > * { animation: fadeUp 0.6s ease forwards; }
+  .hero > *:nth-child(2) { animation-delay: 0.1s; }
+  .hero > *:nth-child(3) { animation-delay: 0.2s; }
+  .hero > *:nth-child(4) { animation-delay: 0.3s; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-flags">🇲🇲 ✈️ 🇹🇭</div>
+  <div class="hero-badge">Updated March 2026</div>
+  <h1>မြန်မာနိုင်ငံသားများအတွက်<br><span>ထိုင်း ၁၄ ရက် Visa Free</span><br>အပြည့်အစုံ သိကောင်းစရာများ</h1>
+  <p class="hero-sub">လေကြောင်းခရီးဖြင့် ထိုင်းနိုင်ငံသို့ Visa မလိုဘဲ ၁၄ ရက်ထိ နေထိုင်နိုင်သော အခွင့်အရေးနှင့်ပတ်သက်တဲ့ အချက်အလက်အားလုံး</p>
+
+  <div class="quick-facts">
+    <div class="fact-card">
+      <div class="fact-icon">📅</div>
+      <div class="fact-value">14</div>
+      <div class="fact-label">ရက်အထိ နေနိုင်</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-icon">✈️</div>
+      <div class="fact-value">လေကြောင်း</div>
+      <div class="fact-label">သာ သက်ဆိုင်</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-icon">💰</div>
+      <div class="fact-value">FREE</div>
+      <div class="fact-label">Visa ကြေး မဆောင်</div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-icon">🛂</div>
+      <div class="fact-value">TDAC</div>
+      <div class="fact-label">ဖြည့်ရမည်</div>
+    </div>
+  </div>
+</div>
+
+<!-- ALERT: IMPORTANT UPDATE -->
+<div class="section" style="padding-top: 40px; padding-bottom: 0;">
+  <div class="alert alert-warning">
+    <div class="alert-icon">⚠️</div>
+    <div class="alert-body">
+      <div class="alert-title">အရေးကြီးသော အပ်ဒိတ် (2025-2026)</div>
+      <p>2025 ခုနှစ် မေ ၁ ရက်မှ စတင်ကာ ထိုင်းနိုင်ငံသို့ ဝင်ရောက်မည့် နိုင်ငံခြားသားအားလုံး <strong style="color:#F39C12;">TDAC (Thailand Digital Arrival Card)</strong> ဖြည့်ရမည်ဖြစ်သည်။ TM6 ပုံစံများ ဖျက်သိမ်းပြီးဖြစ်သည်။</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: ဘာကြောင့် ၁၄ ရက် -->
+<div class="section">
+  <div class="section-title">📖 ၁၄ ရက် Visa Free ဆိုတာ ဘာလဲ</div>
+
+  <div class="content-card">
+    <p>မြန်မာနိုင်ငံနှင့် ထိုင်းနိုင်ငံတို့ကြားတွင် <strong>Bilateral Visa Exemption Agreement</strong> ရှိသောကြောင့် မြန်မာ Passport ကိုင်ဆောင်သူများသည် ထိုင်းနိုင်ငံသို့ Visa မလျှောက်ဘဲ <strong>လေကြောင်းခရီးဖြင့် ဝင်ရောက်</strong>၍ <strong>အများဆုံး ၁၄ ရက်</strong> နေထိုင်ခွင့်ရှိသည်။</p>
+    <p>ဤသဘောတူညီချက်ကို 2015 ခုနှစ် သြဂုတ်လ ၁၁ ရက်တွင် စတင်ကျင့်သုံးခဲ့ပြီး ပြန်လည်ဆိုလျှင် ထိုင်း Passport ကိုင်သူများလည်း မြန်မာနိုင်ငံသို့ ၁၄ ရက် Visa Free သွားနိုင်သည်။</p>
+  </div>
+
+  <div class="alert alert-danger">
+    <div class="alert-icon">🚫</div>
+    <div class="alert-body">
+      <div class="alert-title">မြေနယ်နိမိတ် ဖြတ်ကျော်သည်ဆိုလျှင် မသက်ဆိုင်</div>
+      <p>ဤ ၁၄ ရက် Visa Free သည် <strong>လေကြောင်းခရီး (International Airport)</strong> မှသာ ဝင်ရောက်သည့်အခါ သက်ဆိုင်ပါသည်။ မြေပိုင်းနယ်နိမိတ် (Land Border) မှ ဝင်ရောက်ပါက Visa လိုအပ်ပါသည်။</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: ယူဆောင်ရမည့် စာရွက်စာတမ်း -->
+<div class="section">
+  <div class="section-title">📋 ယူဆောင်ရမည့် အထောက်အထားများ</div>
+
+  <ul class="checklist">
+    <li>
+      <div class="check-icon check-green">✓</div>
+      <div><strong>Passport (မူရင်း)</strong> — သက်တမ်း အနည်းဆုံး ၆ လ ကျန်ရှိရမည်၊ blank page အနည်းဆုံး ၂ မျက်နှာ ရှိရမည်</div>
+    </li>
+    <li>
+      <div class="check-icon check-green">✓</div>
+      <div><strong>Return Ticket</strong> — ၁၄ ရက်အတွင်း ပြန်ထွက်မည့် လေကြောင်းလက်မှတ် (Open Ticket မသုံးရ)</div>
+    </li>
+    <li>
+      <div class="check-icon check-green">✓</div>
+      <div><strong>ငွေကြေး အထောက်အထား</strong> — တစ်ဦးတည်း ခရီးသွားဆိုလျှင် အနည်းဆုံး <strong>10,000 THB</strong>၊ မိသားစုဆိုလျှင် <strong>20,000 THB</strong></div>
+    </li>
+    <li>
+      <div class="check-icon check-green">✓</div>
+      <div><strong>TDAC Confirmation</strong> — ထိုင်းနိုင်ငံသို့ ရောက်ရှိမည့် ၃ ရက်အတွင်း tdac.immigration.go.th တွင် ဖြည့်ထားသော confirmation</div>
+    </li>
+    <li>
+      <div class="check-icon check-green">✓</div>
+      <div><strong>တည်းခိုမည့် လိပ်စာ</strong> — ဟိုတယ် Booking confirmation သို့မဟုတ် လိပ်စာပြနိုင်မည့် အထောက်အထား</div>
+    </li>
+    <li>
+      <div class="check-icon check-orange">!</div>
+      <div><strong>Travel Insurance</strong> — မဖြစ်မနေ မဟုတ်သော်လည်း ထိုင်းတွင် ဆေးကုသမှု အကျုံးမဝင်သောကြောင့် သယ်ဆောင်ရန် အကြံပြု</div>
+    </li>
+  </ul>
+</div>
+
+<!-- SECTION 3: TDAC ဘယ်လိုဖြည့်ရမလဲ -->
+<div class="section">
+  <div class="section-title">📱 TDAC ဘယ်လိုဖြည့်ရမလဲ</div>
+
+  <div class="alert alert-info" style="margin-bottom: 28px;">
+    <div class="alert-icon">ℹ️</div>
+    <div class="alert-body">
+      <div class="alert-title">TDAC ဆိုတာ ဘာလဲ?</div>
+      <p>Thailand Digital Arrival Card (TDAC) သည် ယခင် TM6 စာရွက်ပုံစံကို အစားထိုးသော <strong>Online Entry Form</strong> ဖြစ်ပါသည်။ Visa မဟုတ်ဘဲ ဝင်ရောက်ကြောင်း မှတ်ပုံတင်ခြင်းသာ ဖြစ်ပါသည်။ <strong>အခမဲ့</strong> ဖြစ်ပြီး၊ တတိယပါတီ website များတွင် ကြေး ပေးစရာ မလိုပါ။</p>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">Website သို့ ဝင်ပါ</div>
+        <div class="step-desc"><strong>tdac.immigration.go.th</strong> သို့ ဝင်ပါ (ဖုန်း၊ Tablet၊ Laptop မှ ဖြည့်နိုင်သည်)။ ခရီးမတက်မီ <strong>၃ ရက် (72 နာရီ)</strong> အတွင်း ဖြည့်ရမည်။ ခရီးနေ့တွင်လည်း ဖြည့်နိုင်သော်လည်း ကြိုတင်ဖြည့်ရန် အကြံပြု။</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">"Arrival Card" ကို ရွေးပါ</div>
+        <div class="step-desc">Passport No.၊ ကိုယ်ရေးအချက်များ၊ ဘာသာလူမျိုး၊ ဆက်သွယ်ရန် ဖုန်းနံပါတ်တို့ ဖြည့်ရမည်။ မိသားစုနှင့် သွားပါက Group (အများဆုံး ၁၀ ဦး) အနေဖြင့် တစ်ကြိမ်တည်း ဖြည့်နိုင်သည်။</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">ခရီးစဉ် အချက်များ ဖြည့်ပါ</div>
+        <div class="step-desc">လေကြောင်း Flight No.၊ ထိုင်းတွင် ပထမဦးဆုံး တည်းနားမည့် နေရာ လိပ်စာ (ဟိုတယ် ၁ ခု သာ ထည့်ရသည်)၊ ကျန်းမာရေး ကြေငြာချက် တို့ ဖြည့်ရမည်။</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">Confirmation Email ရယူပါ</div>
+        <div class="step-desc">Submit ပြီးနောက် Email တွင် QR Code ပါသော Confirmation Document ရမည်။ ၎င်းကို Passport နှင့်အတူ Immigration Officer ထံ ပြသရမည်။ Spam Folder စစ်ရန် မမေ့ပါနှင့်။</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-left">
+        <div class="step-num">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-title">Airport တွင် ပြသပါ</div>
+        <div class="step-desc">ထိုင်းသို့ ရောက်သောအခါ Passport + TDAC Confirmation တို့ကို Immigration Counter တွင် ပြသပါ။ TDAC Confirmation ကို Visa Extension၊ 90-Day Report တို့အတွက်လည်း သိမ်းထားရမည်။</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: လုပ်ခွင့်/မလုပ်ရ -->
+<div class="section">
+  <div class="section-title">✅ ဘာတွေ လုပ်နိုင်သလဲ / ❌ မလုပ်ရ</div>
+
+  <div class="two-col">
+    <div class="mini-card">
+      <div class="mini-card-title"><span style="color:var(--green)">✅</span> လုပ်ခွင့်ရှိသည်</div>
+      <ul class="checklist" style="margin: 0;">
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-green" style="width:18px;height:18px;font-size:10px;">✓</div><div>ခရီးသွားလာခြင်း (Tourism)</div></li>
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-green" style="width:18px;height:18px;font-size:10px;">✓</div><div>ဆေးဝါးကုသမှု ခံယူခြင်း</div></li>
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-green" style="width:18px;height:18px;font-size:10px;">✓</div><div>ဆွေမျိုးများ သွားရောက်ကြည့်ရှုခြင်း</div></li>
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-green" style="width:18px;height:18px;font-size:10px;">✓</div><div>Business Meeting (ချိတ်ဆက်မှုသာ)</div></li>
+      </ul>
+    </div>
+    <div class="mini-card">
+      <div class="mini-card-title"><span style="color:var(--red)">❌</span> မလုပ်ရ / မရ</div>
+      <ul class="checklist" style="margin: 0;">
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-red" style="width:18px;height:18px;font-size:10px;">✗</div><div>အလုပ်လုပ်ကိုင်ခြင်း (ဥပဒေမဲ့)</div></li>
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-red" style="width:18px;height:18px;font-size:10px;">✗</div><div>Visa Extension (ယေဘူယျ မရ)</div></li>
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-red" style="width:18px;height:18px;font-size:10px;">✗</div><div>၁၄ ရက်ကျော် နေထိုင်ခြင်း</div></li>
+        <li style="padding: 8px 0; font-size: 13px;"><div class="check-icon check-red" style="width:18px;height:18px;font-size:10px;">✗</div><div>မြေနယ်နိမိတ်မှ ဝင်ရောက်ခြင်း</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5: 14 ရက်ကျော် နေချင်ရင် -->
+<div class="section">
+  <div class="section-title">🕐 ၁၄ ရက်ထက် ပိုနေချင်ရင်</div>
+
+  <div class="content-card">
+    <p>၁၄ ရက် Visa Free ဖြင့် ဝင်ရောက်ပြီးနောက် ထိုင်းနိုင်ငံတွင် ဆက်လက်နေထိုင်လိုပါက <strong>Visa</strong> တစ်မျိုးမျိုး လျှောက်ထားရမည်။</p>
+  </div>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Visa အမျိုးအစား</th>
+        <th>ကာလ</th>
+        <th>သင့်တော်သူ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-label">TR (Tourist Visa)</td>
+        <td><span class="badge badge-green">60+30 ရက်</span></td>
+        <td style="color:var(--text-muted)">ခဏတာ နေချင်သူ</td>
+      </tr>
+      <tr>
+        <td class="td-label">ED (Education Visa)</td>
+        <td><span class="badge badge-orange">90 ရက် + ဆက်သက်</span></td>
+        <td style="color:var(--text-muted)">ဘာသာစကား သင်ကြားသူ</td>
+      </tr>
+      <tr>
+        <td class="td-label">DTV (Destination Thailand)</td>
+        <td><span class="badge badge-green">180 ရက်</span></td>
+        <td style="color:var(--text-muted)">Remote Work / Digital Nomad</td>
+      </tr>
+      <tr>
+        <td class="td-label">Non-O (Marriage/Family)</td>
+        <td><span class="badge badge-green">90 ရက် + တစ်နှစ်</span></td>
+        <td style="color:var(--text-muted)">ထိုင်းနိုင်ငံသားနှင့် အိမ်ထောင်ပြု</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 6: သတိပြုရမည့် အချက်များ -->
+<div class="section">
+  <div class="section-title">⚠️ သတိပြုရမည့် အချက်များ (2025-2026)</div>
+
+  <div class="alert alert-warning" style="margin-bottom: 16px;">
+    <div class="alert-icon">🔁</div>
+    <div class="alert-body">
+      <div class="alert-title">Visa Run ကန့်သတ်မှု အသစ် (နိုဝင်ဘာ 2025)</div>
+      <p>2025 ခုနှစ် နိုဝင်ဘာ ၁၃ ရက်မှ စတင်ကာ ထိုင်း Immigration သည် <strong>Visa Exemption ဖြင့် ၂ ကြိမ်ထက်ပို</strong> ဝင်ထွက်သောသူများကို အကြောင်းပြချက် မရှိဘဲ ဝင်ခွင့်ငြင်းနိုင်သည်။ ရေရှည်နေထိုင်ရန် ရည်ရွယ်ပါက သင့်တော်သော Visa ရယူပါ။</p>
+    </div>
+  </div>
+
+  <ul class="checklist">
+    <li>
+      <div class="check-icon check-orange">!</div>
+      <div><strong>Passport သက်တမ်း ၆ လ</strong> — ၆ လ မပြည့်ပါက ဝင်ခွင့် ငြင်းခံရနိုင်သည်</div>
+    </li>
+    <li>
+      <div class="check-icon check-orange">!</div>
+      <div><strong>Return Ticket မရှိပါက</strong> — Immigration Officer မှ ဝင်ခွင့် ငြင်းနိုင်သည်</div>
+    </li>
+    <li>
+      <div class="check-icon check-orange">!</div>
+      <div><strong>TDAC မဖြည့်ပါက</strong> — Airport Kiosk တွင် ဖြည့်ရမည်ဖြစ်ပြီး နှောင့်နှေးနိုင်သည်</div>
+    </li>
+    <li>
+      <div class="check-icon check-red">✗</div>
+      <div><strong>Overstay</strong> — ၁ ရက်ကျော်ပါက နေ့တိုင်း <strong>500 THB</strong> ဒဏ်ကြေး ကျသင့်ပြီး နောင်ဝင်ရောက်ချိန် ပိတ်ပင်ခံရနိုင်သည်</div>
+    </li>
+  </ul>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-title">Visa ကိစ္စရပ်များ ကူညီပေးပါမည်</div>
+  <p class="cta-sub">TR Visa, ED Visa, DTV Visa, Visa Extension နှင့် အခြား ဝန်ဆောင်မှုများအတွက် Yone Kyi Yar BKK Service ကို ဆက်သွယ်ပါ</p>
+  <a href="#" class="cta-btn">📲 ဆက်သွယ်ရန်</a>
+</div>
+
+<div class="footer-note">
+  <p>📌 ဤဆောင်းပါးသည် 2026 မတ်လ အချက်အလက်များ အပေါ်တွင် အခြေပြုသည်။ ထိုင်း Immigration ဥပဒေများ ပြောင်းလဲနိုင်သောကြောင့် တရားဝင် ထိုင်း Immigration website မှ နောက်ဆုံး သတင်းများကို စစ်ဆေးပါ။</p>
+  <p style="margin-top: 8px;">© Yone Kyi Yar BKK Service | Bangkok, Thailand</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Non-LA Visa ကိုင်ဆာင်သူ ဘဏ်အကောင့် | True Nest BKK Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🏠</div>
+    <div class="logo-text"><strong>True Nest BKK</strong><span>Service · Bangkok</span></div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About Us</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="tel:+66994147913" class="nav-cta">📞 ဆက်သွယ်ရန်</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <a href="bank-account-service.html" class="back-btn">← Bank Account Service သို့ ပြန်သွားရန်</a>
+    <div class="page-hero-label">Bank Account Service</div>
+    <h1>Non-LA Visa ကိုင်ဆာင်သူ ဘဏ်အကောင့်</h1>
+    <p class="page-hero-my">Non-LA Visa Holder</p>
+  </div>
+</div>
+<div class="page-content">
+<div class="alert alert-info reveal"><div class="al-icon">ℹ️</div><div class="al-body"><span class="my">Non-LA Visa ကိုင်ဆောင်သောကြောင့် ထိုင်းဘဏ်တွင် အကောင့် ဖွင့်နိုင်ပါသည်</span></div></div><div class="info-section reveal"><div class="info-title">လိုအပ်သော စာရွက်စာတမ်းများ</div><ul class="docs-list"><li><div class="doc-icon">📄</div><div><strong>Passport မူရင်း</strong><div class="my">Non-LA Visa ပါဝင်ရမည်</div></div></li><li><div class="doc-icon">📄</div><div><strong>TM30 Copy</strong><div class="my">နေထိုင်ရာ လိပ်စာ</div></div></li><li><div class="doc-icon">📄</div><div><strong>ဓာတ်ပုံ</strong><div class="my">4x6 cm</div></div></li><li><div class="doc-icon">📄</div><div><strong>Resident Certificate</strong><div class="my">Immigration Certificate</div></div></li></ul></div><div class="info-section reveal"><div class="info-title">ဝန်ဆောင်မှု အဆင့်များ</div><div class="steps"><div class="step"><div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">Documents စစ်ဆေးပေးပါ</div><div class="step-desc my">Visa / Card နှင့် Documents ပြည့်စုံမှု စစ်ဆေးပေးပါမည်</div></div></div><div class="step"><div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">ဘဏ် ရွေးချယ်ပေးပါ</div><div class="step-desc my">KBank, Bangkok Bank, SCB စသည် သင့်တော်သော ဘဏ် ညှိပေးပါမည်</div></div></div><div class="step"><div class="step-left"><div class="step-num">3</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">ဘဏ် ကိုယ်စားလှယ်ဆောင်ရွက်</div><div class="step-desc my">ဘဏ်သွားပြီး Account ဖွင့်ပေးပါမည်</div></div></div><div class="step"><div class="step-left"><div class="step-num">4</div><div class="step-line"></div></div><div class="step-body"><div class="step-title">Bank Account ရရှိ</div><div class="step-desc my">Account Number, ATM Card ရရှိပြီး သုံးနိုင်</div></div></div></div></div>
+
+<div class="cta-contact">
+  <h3>ဆက်သွယ်ရန် / Contact Us</h3>
+  <span class="my">မေးမြန်းချင်သည်များ Viber / WhatsApp / Phone မှ ဆက်သွယ်နိုင်ပါသည်</span>
+  <div class="contact-btns">
+    <a href="viber://chat?number=66994147913" class="cbtn cbtn-line">📲 Viber</a>
+    <a href="https://wa.me/66994147913" class="cbtn cbtn-wa">💬 WhatsApp</a>
+    <a href="tel:+66994147913" class="cbtn cbtn-phone">📞 +66994147913</a>
+  </div>
+</div>
+</div>
+<footer><p>© 2024–2026 True Nest BKK Service · Bangkok, Thailand &nbsp;|&nbsp; <span class="my">မြန်မာနိုင်ငံသားများအတွက် ဝန်ဆောင်မှု</span></p></footer>
+<script>
+const nb=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nb.classList.toggle('scrolled',scrollY>20));
+document.getElementById('navToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((e)=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('visible')),{threshold:0.08}).observe(el));
+</script>
+</body>
+</html>
